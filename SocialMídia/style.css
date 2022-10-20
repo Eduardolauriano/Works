@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+body {
+    font-size: 62.5%;
+    text-align: center;
+    background: gray;
+    font-family: 'Roboto', sons-serif;
+    background-image: url("./image/temple.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header img {
+    border-radius: 100%;
+    width: 10rem;
+    border: 2px solid white; 
+    margin: 3rem auto 1rem;
+
+    animation: updown 1.5s 300ms backwards;
+
+}   
+
+header h1 {
+    background-color: black;
+    color:white;
+    border: 1px solid white;
+
+    border-radius: 2rem;
+    width:fit-content;
+    padding: 0.5rem;
+    margin: auto;
+
+    animation: scale3d 10s backwards;
+}
+
+main{
+    margin-top: 4rem;
+    font-size: 1rem;
+    position: relative;
+}
+
+main ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+main ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.80);
+    gap: 0.8rem;
+    border-radius: 3rem;
+    width: 30%;
+    margin: auto;
+    padding: .9rem;
+    
+    
+    animation: lateral 1s 800ms backwards;
+}
+
+main ul li a {
+   text-decoration: none;
+   color: black;
+}
+
+main ul li img {
+    width: 1.5rem;
+}
+
+#vanta {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes updown {
+    0%{
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scale3d {
+    0%{
+        opacity: 0;
+        transform:scale3d()
+    }
+    100%{
+        opacity: 1;
+        transform: scale3d(1);
+    }
+}
+
+@keyframes lateral {
+    0% {
+        opacity: 0;
+        transform: translateX(-20rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Midia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded',() => {
+        VANTA.BIRDS({
+  el: "#vanta",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  backgroundColor: 0x0,
+  color1: 0xffffff,
+  color2: 0xfafafa,
+  quantity: 2.00,
+  backgroundAlpha: 0.0
+})
+    })
+
+</script>
+</head>
+<body>
+    <div id="vanta"></div>
+    <header>
+        <div>
+            <img src="./image/myphoto.png" alt="">
+            <h1>@EduardoLauriano</h1>        
+        </div>
+    </header>
+    <main>
+        <div>
+            <ul>
+                <li class="home">
+                    <img src="./image/home.svg" alt="">
+                    <a href="#">Offical WebSite</a>
+                </li>
+                <li class="youtube">
+                    <img src="./image/youtube.svg" alt="">
+                    <a href="#">Youtube</a>
+                </li>
+                <li class="twitter">
+                    <img src="./image/twitter.svg" alt="">
+                    <a href="#">Twitter</a>
+                </li>
+                <li class="github">
+                    <img src="./image/github.svg" alt="">
+                    <a href="#">GitHub</a>
+                </li>
+                <li class="skype">
+                    <img src="./image/skype.svg" alt="">
+                    <a href="#">Skype</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    
+</body>
+</html>
